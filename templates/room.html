@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSocket Chat and Drawing</title>
+    <link rel="stylesheet" href="/static/room/css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>WebSocket Chat and Drawing</h1>
+        <h2>Your ID: <span id="ws-id"></span></h2>
+
+        <div id="chat">
+            <form action="" onsubmit="sendMessage(event)">
+                <input type="text" id="messageText" autocomplete="off" placeholder="Type your message here..." />
+                <button>Send</button>
+            </form>
+            <ul id='messages'></ul>
+        </div>
+
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <script src="/static/room/js/script.js"></script>
+</body>
+
+</html>
